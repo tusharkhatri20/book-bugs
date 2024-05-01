@@ -1,0 +1,212 @@
+.profileBox {
+  position: relative;
+  /* height: 70vh; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    margin-top: 1rem;
+    padding-bottom: 5rem;
+}
+
+.profileHeading {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+/* 
+.userNotLoggedIn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+} */
+
+.userLoggedIn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.userDetailsDiv {
+    display: flex;
+    flex-direction: column;
+    border: 2px solid skyblue;
+    box-shadow: rgba(90, 90, 90, 0.35) 0px 5px 15px;
+}
+
+.userDetailsHeaderBtnsDiv {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.headerBtn {
+    display: flex;
+    padding: 0.2rem 0.2rem 0.2rem 0.2rem;
+    width: 50%;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid skyblue;
+    background-color: steelblue;
+    color: white;
+    cursor: pointer;
+}
+
+.headerBtn-active {
+    display: flex;
+    padding: 0.2rem 0.2rem 0.2rem 0.2rem;
+    width: 50%;
+    justify-content: center;
+    border: 1px solid skyblue;
+    background-color: white;
+    color: steelblue;
+    cursor: pointer;
+}
+
+.headerBtn>h3 {
+    padding: 0.5rem 0.5rem;
+    margin: 0;
+}
+
+
+.profileDiv {
+    padding: 0.5rem 0.5rem 0.5rem 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 30rem;
+    height: 17rem;
+
+}
+
+.profileDetails {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    margin-bottom: 2rem;
+}
+
+.profileDetailsLeftColumn {
+    width: 30%;
+}
+
+.profileDetailsRightColumn {
+    width: 70%;
+}
+
+.profileDetailsLeftColumn>h3 {
+    font-size: 1.1rem;
+    margin: 0.5rem 0.5rem;
+}
+
+.profileDetailsRightColumn>h3 {
+    font-weight: lighter;
+    font-size: 1.1rem;
+    margin: 0.5rem 0.5rem;
+}
+
+
+.profileActionBtns {
+    display: flex;
+
+}
+
+.logoutBtn {
+    border: 2px solid skyblue;
+    padding: 0.5rem 0.5rem;
+    background-color: transparent;
+    font-size: 1rem;
+    color: red;
+    border-radius: 20px;
+    width: 35%;
+    cursor: pointer;
+}
+
+.logoutBtn:hover {
+    color: white;
+    background-color: red;
+}
+
+
+
+.userAddressDiv {
+    padding: 0.5rem 0.5rem 0.5rem 1rem;
+    display: flex;
+    flex-direction: column;
+    width: 30rem;
+    min-height: 17rem;
+    justify-content: space-evenly;
+}
+
+.addressDetailsRow>h3 {
+    margin-top: 0rem;
+    margin-bottom: 0.5rem;
+}
+
+.addressActionBtns {
+    display: flex;
+    flex-direction: row;
+    /* justify-content: space-between; */
+    padding: 0.5rem 0.5rem 0.5rem 0rem;
+}
+
+.editAddressBtn {
+    margin-left: 0rem;
+    color: black;
+}
+
+.deleteAddressBtn {
+    margin-left: 0.5rem;
+    color: orangered;
+}
+
+.editAddressBtn,
+.deleteAddressBtn {
+    padding: 0.5rem 0.5rem;
+    /* background-color: steelblue; */
+    background-color: transparent;
+    border: 2px solid skyblue;
+    font-size: 0.8rem;
+    font-weight: bold;
+    border-radius: 20px;
+    width: 25%;
+    cursor: pointer;
+
+}
+
+.addNewAddressBtnDiv {
+    padding: 0.5rem 0rem;
+    margin: 0.5rem 0rem;
+}
+
+.addnewAddressBtn {
+    padding: 0.5rem 0.5rem;
+    background-color: transparent;
+    border: 2px solid skyblue;
+    font-size: 0.9rem;
+    font-weight: bold;
+    border-radius: 20px;
+    width: 13rem;
+    cursor: pointer;
+}
+
+.addnewAddressBtn:hover,
+.editAddressBtn:hover {
+    background-color: steelblue;
+    color: white;
+}
+
+.deleteAddressBtn:hover {
+    background-color: red;
+    color: white;
+}
+
+
+@media only screen and (max-width: 490px) {
+    .profileDiv,.userAddressDiv {
+        width: 20rem;
+        
+    }
+}
+

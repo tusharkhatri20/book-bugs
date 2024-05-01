@@ -1,0 +1,99 @@
+.addressMain {
+    background: linear-gradient(94.8deg, rgba(255, 255, 255, .1) 46.13%, rgba(255, 255, 255, .4) 59.11%);
+    box-shadow: 0 0 4px 1px rgba(0, 0, 0, .1);
+    -webkit-backdrop-filter: blur(7.5px);
+    backdrop-filter: blur(7.5px);
+    display: flex;
+
+    width: 100%;
+    position: fixed;
+    top: 0%;
+    height: 100%;
+
+    z-index: 9;
+    transition: background .3s ease;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.addressComponent {
+    position: absolute;
+    bottom: 16%;
+    background: white;
+    width: 22rem;
+    border: 2px solid skyblue;
+    box-shadow: rgba(90, 90, 90, 0.35) 0px 5px 15px;
+    padding: 0.3rem 0.3rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.addressComponentHeader {
+    text-align: center;
+}
+
+.addressComponentDetailsForm {
+    display: flex;
+    flex-direction: column;
+}
+
+.input:focus{
+    outline-color: steelblue;
+}
+
+.inputFieldsDiv {
+    display: flex;
+    flex-direction: column;
+    margin: 0.3rem 0.3rem;
+}
+
+.inputField {
+    padding: 0.3rem 0.3rem;
+    margin: 0.3rem 0.3rem;
+}
+
+.formBtns {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding: 0.3rem 0.3rem;
+    margin: 0.3rem 0.3rem;
+}
+
+.formBtn {
+    border: 2px solid skyblue;
+    padding: 0.3rem 0.3rem;
+    margin: 0.5rem 0 0.5rem 0;
+    background-color: steelblue;
+    color: white;
+    border-radius: 20px;
+    min-width: 30%;
+    cursor: pointer;
+}
+
+.formBtn:hover {
+    color: steelblue;
+    background-color: white;
+}
+
+
+
+.btn-cancel {
+    background-color: red;
+}
+
+.btn-cancel:hover {
+    background-color: transparent;
+    color: red;
+}
+
+
+
+
+.btn-dummy:disabled,
+.btn-dummy[disabled] {
+    color: gray;
+    background-color: gainsboro;
+
+}

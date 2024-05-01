@@ -1,0 +1,21 @@
+.pageNotFoundBox {
+    margin: 7rem auto auto auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.pageNotFoundHeading {
+    text-align: center
+}
+
+.pageNotFound {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column
+}
+
+.redirectToHome {
+    color: blue;
+    text-decoration: underline;
+}

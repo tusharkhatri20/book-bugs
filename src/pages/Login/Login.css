@@ -1,0 +1,104 @@
+.loginMain{
+    /* width: 100vw; */
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    /* margin: 0 2rem 0 0; */
+
+}
+.loginDiv{
+    border: 2px solid skyblue;
+    width:23rem;
+    height: 22rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 2px solid skyblue;
+    box-shadow: rgba(90, 90, 90, 0.35) 0px 5px 15px;
+
+}
+
+
+.loginHeaderDiv{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center ;
+    margin-top: 0rem;
+}
+.loginHeading{
+    margin: 1rem 0.5rem 0.5rem 0.5rem;
+    font-size: 2rem;
+    font-weight: bold;
+    color: steelblue;
+}
+
+.loginInputsDiv{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center ;
+    padding:0.5rem 0.5rem;
+    margin:0.5rem 0.5rem;
+  
+}
+
+.emailInputDiv,
+.passwordInputDiv{
+    padding: 0.2rem 0.2rem;
+    border: 1px solid skyblue;
+    margin: 0.5rem 0.5rem;
+    font-size: 1rem;
+    width: 15rem;
+}
+
+input:focus{
+    outline-color: steelblue;
+}
+
+
+
+.eyeInvisible,
+.eyeVisible{
+    position: absolute;
+    font-size: 1.2rem;
+    bottom: 20%;
+    right: 8%;
+}
+
+.loginActionBtns{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0.2rem 0.2rem;
+}
+
+.loginActionBtn{
+    border: 2px solid skyblue;
+    padding: 0.3rem 0.3rem;
+    margin: 0.2rem 0 0.2rem 0;
+    background-color: steelblue;
+    color: white;
+    border-radius: 20px;
+    width: 15rem;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.newUserSignUp{
+    text-align: center;
+    padding: 0.2rem 0.2rem; 
+    margin: 0.2rem 0.2rem; 
+}
+
+.newUserSignUpLink{
+    color: steelblue;
+}
+
+/* .loginFooter{
+
+} */

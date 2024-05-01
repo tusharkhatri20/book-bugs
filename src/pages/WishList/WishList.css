@@ -1,0 +1,85 @@
+.wishListBox {
+    margin: 1rem auto 3rem auto;
+    display: flex;
+    flex-direction: column
+}
+
+.wishListHeading {
+    text-align: center
+}
+
+.EmptyWishList {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.wishList {
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    align-items: center;
+
+}
+
+
+
+.wishListItem {
+    width: 35rem;
+    border: 2px solid skyblue;
+    box-shadow: rgba(90, 90, 90, 0.35) 0px 5px 15px;
+    padding: 1rem 1rem 1rem 1rem;
+    margin-bottom: 2rem;
+}
+
+
+.wishListItemDetailsDiv {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin: 0.2rem 0.2rem;
+    border: 1px solid gray;
+}
+
+.wishListItmImgDiv{
+    padding: 0.5rem 0.5rem;
+}
+
+
+.wishListItemActionBtns {
+
+    margin: 0.7rem 0.2rem 0.2rem 0.5rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.wishListItemActionBtn {
+    font-size: 1rem;
+    border: 2px solid skyblue;
+    padding: 0.5rem 0.5rem;
+    margin: 0.5rem 0 0.5rem 0;
+    background-color: steelblue;
+    color: white;
+    border-radius: 20px;
+    width: 10rem;
+    align-items: center;
+    cursor: pointer;
+}
+
+.wishListItemActionBtn:hover {
+    background-color: aliceblue;
+    color: black;
+}
+
+@media only screen and (max-width: 490px) {
+    .wishListBox{
+        max-width: 55rem;
+    }
+    .wishListItem {
+        width: 21rem;
+    }
+
+}

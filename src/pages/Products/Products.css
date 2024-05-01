@@ -1,0 +1,370 @@
+.main {
+    display: flex;
+    flex-direction: column;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+
+
+
+.contentAndFilterDiv {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    margin-top: 1rem;
+    overflow: hidden;
+}
+
+
+.filterDiv {
+    background-color: white;
+    position: fixed;
+    z-index: 9999;
+    font-size: 1rem;
+    width: 15rem;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 2rem 0rem 2rem 2rem;
+    border: 2px solid skyblue;
+    /* border-right: 2px solid gray; */
+    overflow-y: auto;
+    left: 0;
+    
+}
+
+.clearFilter {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 10rem;
+    align-items: center;
+}
+
+.clearFilterBtn {
+    border: 2px solid skyblue;
+    padding: 0.1rem 0.1rem;
+    background-color: steelblue;
+    color: white;
+    border-radius: 10px;
+    width: 5rem;
+    height: 2rem;
+    cursor: pointer;
+}
+
+.clearFilterBtn:hover {
+    background-color: aliceblue;
+    color: black;
+}
+
+.price-range {
+    display: flex;
+    width: 10rem;
+    justify-content: space-between;
+    grid-gap: 0.5rem;
+    gap: 0.5rem;
+
+}
+
+.slider {
+    width: 10rem;
+}
+
+
+.CheckBoxFilterDiv {
+    display: flex;
+    flex-direction: column;
+}
+
+.radioFilterDiv {
+    display: flex;
+    flex-direction: column;
+}
+
+.slider,
+.checkbox,
+.radio,
+.radio1{
+    cursor: pointer;
+}
+
+
+.showingResultsDiv{
+    display: flex;
+    flex-direction: column;
+    margin-left: 18rem;
+}
+
+.showingResultsHeader{
+    width: 100%;
+    min-height: 3rem;
+    padding: 1rem 1rem 1rem 1rem;
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.showingResultsHeader p{
+    font-size: 1.7rem;
+    font-weight: bold;
+}
+.filterIcon{
+    display: none;
+}
+
+
+.productsDiv {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+    gap: 1rem 2rem;
+}
+
+.productDiv {
+    display: flex;
+    flex-direction: column;
+    width: 15rem;
+    height: 26rem;
+    border: 2px solid skyblue;
+    cursor: pointer;
+    box-shadow: rgba(90, 90, 90, 0.35) 0px 5px 15px;
+    position: relative;
+    padding: 1rem 1rem 1rem 1rem;
+    margin: 1rem 1rem 1rem 1rem;
+}
+
+
+.card-img {
+    display: flex;
+    justify-content: space-around;
+}
+
+.bookImg {
+    width: 12.5rem;
+    height: 18.5rem;
+    /* width: 200px;
+    height: 300px; */
+}
+
+.wishlist-icon {
+    color: lightgray;
+    position: absolute;
+    display: inline-block;
+    /* padding: 0.4rem 0.5rem; */
+    font-weight: bold;
+    font-size: 1.2rem;
+    right: 5%;
+    top: 3%;
+}
+
+.wishlist-icon:hover{
+    color: red;
+}
+
+
+.wishlist-icon-filled {
+    color: lightgray;
+    position: absolute;
+    display: inline-block;
+    /* padding: 0.4rem 0.5rem; */
+    font-weight: bold;
+    font-size: 1.2rem;
+    right: 5%;
+    top: 3%;
+    color: red;
+}
+
+.card-details {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.card-title-rating {
+    padding: 0.2rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.card-rating p {
+    display: flex;
+    color: white;
+    background-color: green;
+    width: fit-content;
+    justify-content: space-around;
+    padding: 0rem 0.1rem 0rem 0.1rem;
+
+}
+
+p {
+    margin: 0 0;
+}
+
+.card-title-header {
+    display: block;
+    font-weight: bold;
+}
+
+.card-price {
+    padding: 0.2rem;
+}
+
+
+.discountPercentage {
+    color: green;
+}
+
+.addToCartBtn {
+    display: flex;
+    justify-content: flex-start;
+    /* margin:  auto; */
+    margin: 0.5rem 0.5rem;
+}
+
+
+.addToCart,.goToCart {
+    font-size: 1rem;
+    border: 2px solid skyblue;
+    padding: 0.5rem 0.5rem;
+    background-color: steelblue;
+    color: white;
+    border-radius: 20px;
+    width: 100%;
+
+}
+
+
+.addToCart:hover, .goToCart:hover {
+    background-color: aliceblue;
+    color: black;
+    cursor: pointer;
+}
+
+
+@media only screen and (max-width: 950px) {
+
+ 
+.filterDiv {
+        display: none;
+    }   
+
+.showFilterDivSm{
+    background-color: white;
+    position: fixed;
+    z-index: 9999;
+    font-size: 0.9rem;
+    width: 12rem;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    padding: 2rem 0rem 2rem 2rem;
+    border: 2px solid skyblue;
+    overflow-y: auto;
+    left: 0;
+}
+
+
+    .showingResultsDiv{
+        margin: auto auto;
+    }
+
+
+    .showingResultsHeader{
+        display: flex;
+        margin: auto auto;
+    }
+
+    .filterIcon{
+        display: block;
+        margin: 0 1rem 0 1rem;
+        padding: 0 1rem 0 1rem;
+    }
+
+    .productsDiv {
+        margin: auto auto;
+    }
+}
+
+
+
+@media only screen and (max-width: 768px) {
+
+/* .filterDiv {
+        display: none;
+    }    */
+
+.showFilterDivSm{
+    background-color: white;
+    position: fixed;
+    z-index: 9999;
+    font-size: 0.9rem;
+    width: 12rem;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    padding: 2rem 0rem 2rem 2rem;
+    border: 2px solid skyblue;
+    overflow-y: auto;
+    left: 0;
+}
+
+
+
+    .showingResultsDiv{
+        margin: auto auto;
+    }
+    .showingResultsHeader p{
+        font-size: 1.6rem;
+        font-weight: bold;
+    }
+    
+
+    .productsDiv {
+        margin: auto auto;
+    }
+
+    .productDiv {
+        justify-content: space-between;
+        width: 15rem;
+        height: 27rem;
+        padding: 0.5rem 0.5rem 0.5rem 0.5rem;
+        margin: 0.5rem 0.5rem 0.5rem 0.5rem;
+    }
+
+    .bookImg {
+        width: 10rem;
+        height: 16rem;
+        /* width: 200px;
+        height: 300px; */
+    }
+
+
+    .addToCart {
+        font-size: 1rem;
+        /* padding: 0.2rem 0.2rem; */
+    }
+
+
+    .addToCartBtn {
+        margin: 0.2rem 0.2rem;
+    }
+
+    .card-title {
+        font-size: 1.2rem;
+    }
+
+    .card-rating p {
+
+        font-size: 1.4rem;
+
+    }
+
+}
